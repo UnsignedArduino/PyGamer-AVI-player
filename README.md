@@ -4,7 +4,7 @@ An AVI video player for the Adafruit PyGamer.
 
 ## Install
 
-After downloading all the libraries, follow the modifications listed in [`src/main.cpp`](src/main.cpp).
+After downloading all the libraries, follow the modifications listed in [`src/main.cpp`](src/main.cpp) if you choose to use PlatformIO.
 
 ## FFmpeg command
 

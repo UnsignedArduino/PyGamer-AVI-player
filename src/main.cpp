@@ -26,6 +26,13 @@ void setup() {
 
   arcada.displayBegin();
   arcada.setBacklight(255);
+  arcada.display->fillScreen(ARCADA_BLACK);
+
+  if (!arcada.filesysBegin(ARCADA_FILESYS_SD)) {
+    Serial.println("No SD card found!");
+    arcada.display->fillScreen(ARCADA_RED);
+    arcada.haltBox("Could not find SD card!");
+  }
 }
 
 void loop() {}
